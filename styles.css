@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Raleway, sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.zero {
+  padding: 0;
+  margin: 0;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+}
+
+.main {
+  background-color: pink;
+  color: white;
+}
+
+.main div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 10px;
+}
+
+.main span.location {
+  font-size: 2rem;
+  font-family: Cinzel, sans-serif;
+}
+
+.main span.date {
+  font-size: 1.5rem;
+  font-family: "Dancing Script", sans-serif;
+}
+
+.main span.name {
+  font-size: 2.25rem;
+  font-family: Cinzel, sans-serif;
+}
+
+.main span.congrats {
+  font-size: 4rem;
+  font-family: Pacifico, sans-serif;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.main span.phrase {
+  font-family: "Dancing Script", sans-serif;
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 30px;
+}
+
+/* LINE UP */
+
+.header {
+  height: 20vh;
+  width: 100%;
+  background-color: #f1d5ae;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.header div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.header div h2 {
+  font-size: 2.5rem;
+  font-family: Cinzel, sans-serif;
+}
+
+.header h2 {
+  margin-bottom: -5px;
+}
+
+/* LINEUP */
+
+.lineup {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("https://images.unsplash.com/photo-1604147706283-d7119b5b822c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+}
+
+.person {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 700px) {
+  .person.two:first-of-type {
+    padding-right: 30%;
+  }
+
+  .person.two:nth-of-type(2) {
+    padding-left: 30%;
+  }
+
+  .person.three:first-of-type {
+    padding-right: 30%;
+  }
+
+  .person.three:nth-of-type(2) {
+    padding-left: 30%;
+  }
+
+  .person.three:nth-of-type(3) {
+    padding-right: 30%;
+  }
+}
+
+.person.two {
+  height: 50%;
+}
+
+.person.three {
+  height: 33%;
+}
+
+.person div.potrait {
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div.potrait img {
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.person.two>div>img {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+.person.three>div>img {
+  max-height: 160px;
+  max-width: 160px;
+}
+
+.bio {
+  max-width: 200px;
+  text-align: center;
+}
+
+.bio .name {
+  font-family: Cinzel, sans-serif;
+}
+
+.bio .horoscope {
+  font-family: Aboreto, sans-serif;
+  font-style: italic;
+}
+
+.bio .knownfor {
+  font-family: "Courgette", sans-serif;
+}
+
+.bio .quote {
+  font-family: "Marck Script", sans-serif;
+  font-size: 1.05rem;
+}
+
+/* brief itinerary */
+
+.day.odd {
+  background-color: #caf0f8;
+}
+
+.day.even {
+  background-color: #f5cac3;
+}
+
+.photo.container {
+  width: 100%;
+  height: 30vh;
+  overflow: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.photograph {
+  max-height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroid {
+  background: #F5f5f5;
+  display: inline-block;
+  /* margin: 55px 75px 30px; */
+  padding: 10px 10px 30px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+  -webkit-transition: all .20s linear;
+  -moz-transition: all .20s linear;
+  transition: all .20s linear;
+  z-index: 0;
+  position: relative;
+  object-fit: contain;
+}
+
+.polaroid img {
+  display: block;
+  width: 125px;
+  height: 125px;
+}
+
+.polaroid:first-of-type {
+  position: relative;
+  top: 10px;
+  left: 50px;
+  transform: rotate(-10deg);
+}
+
+.polaroid:last-of-type {
+  position: relative;
+  top: 10px;
+  right: 50px;
+  transform: rotate(10deg);
+}
+
+.schedule {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.schedule .label {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.label h2 {
+  font-size: 2rem;
+  font-family: Cinzel, sans-serif;
+  line-height: 30px;
+}
+
+.table-container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  height: 55vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 4fr;
+  grid-auto-flow: row;
+  align-items: center;
+  margin-bottom: 0 !important;
+}
+
+.thursday>.table {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.firday>.table {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.saturday>.table {
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.sunday>.table {
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid black;
+}
+
+.grid-item:first-of-type {
+  border-top: 1px solid black;
+}
+
+.grid-item:nth-of-type(2) {
+  border-top: 1px solid black;
+}
+
+.grid-item:last-of-type {
+  border-bottom: none;
+}
+
+.grid-item:nth-last-of-type(2) {
+  border-bottom: none;
+}
+
+.grid-item.time {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+
+.grid-item.event {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
